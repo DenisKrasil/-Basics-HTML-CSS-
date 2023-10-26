@@ -9,8 +9,14 @@ body {
 }
 
 .container {
+    width: 80vw;
     margin: 0 auto;
-    width: 1147px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 97vw;
+    }
 }
 
 .nav {
@@ -83,9 +89,16 @@ body {
     margin-right: 20px;
 }
 
+.gap-1 {
+    gap: 128px;
+}
+
+.gap-2 {
+    gap: 68px;
+}
+
 .main-right {
     display: flex;
-    justify-content: end;
     margin-bottom: 200px;
 }
 
@@ -100,6 +113,9 @@ body {
 
 .logos {
     margin-bottom: 256px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
 }
 
 .inform-title {
@@ -175,37 +191,18 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    gap: 30px;
+    grid-template-columns: repeat(3, 362px);
     justify-content: center;
 
 }
 
-.card-1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.card-2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.card-3 {
-    grid-area: 1 / 3 / 2 / 4;
-}
 
 .card-4 {
-    grid-area: 2 / 1 / 4 / 3;
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
-.card-5 {
-    grid-area: 2 / 3 / 3 / 4;
-}
-
-.card-6 {
-    grid-area: 3 / 3 / 4 / 4;
-}
 
 .card-img {
     padding-top: 30px;
@@ -213,7 +210,7 @@ body {
     margin-left: 132px;
 }
 
-.card-img-4{
+.card-img-4 {
     margin-bottom: 60px;
     margin-left: 224px;
 }
@@ -230,7 +227,7 @@ body {
     margin-bottom: 30px;
 }
 
-.card-title-4{
+.card-title-4 {
     margin-bottom: 60px;
 }
 
@@ -246,7 +243,7 @@ body {
     margin-bottom: 30px;
 }
 
-.card-text-4{
+.card-text-4 {
     margin-bottom: 144px;
 }
 
@@ -329,4 +326,299 @@ body {
 
 .footer-social {
     margin-top: 33px;
+}
+
+@media (max-width: 1024px) {
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .main-left, .main-right {
+        width: 97%;
+    }
+
+    .main-right {
+        margin-bottom: 0px;
+    }
+
+    .main-right {
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+
+    .logo-img {
+        width: 35%;
+        margin: auto;
+    }
+
+    .inform-left, .inform-right {
+        width: 97%;
+    }
+
+    .inform-left {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+
+    .inform-right {
+        margin-bottom: 264px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 362px);
+        gap: 32px;
+    }
+
+    .card{
+        text-align: center;
+    }
+
+    .card-4 {
+        display: none;
+    }
+
+    .card-5 {
+        display: none;
+    }
+
+    .card-6 {
+        display: none;
+    }
+
+    .card-img {
+        margin-left: 0;
+    }
+
+    .reviews-left, .reviews-right {
+        width: 97%;
+        margin-bottom: 0;
+    }
+
+    .reviews-left {
+        margin-bottom: 64px;
+    }
+
+    .reviews-right {
+        text-align: center;
+        margin-bottom: 269px;
+    }
+
+    .footer-subtitle {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 33px;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        width: 37%;
+        margin-bottom: 0;
+    }
+
+    .footer-info-logo {
+        margin-right: 5px;
+    }
+
+    .footer-right {
+        margin-bottom: 46px;
+    }
+
+    .footer-social {
+        display: flex;
+        gap: 24px;
+    }
+
+    .footer-social {
+        margin-top: 33px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .menu-link {
+        font-size: 14px;
+        padding: 40px 10px;
+    }
+
+    .header {
+        margin-bottom: 64px;
+    }
+
+    .main-left{
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 64px;
+    }
+
+    .dsc {
+        margin-bottom: 39px;
+    }
+
+    .fa-play {
+        margin-right: 10px;
+
+    }
+
+    .main-link {
+        margin-right: 0;
+        display: block;
+        max-width: 181px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main-link-big {
+        max-width: 217px;
+        margin-top: 24px;
+    }
+
+    .img-right{
+        max-width: 97%;
+    }
+
+    .gap-2 {
+        gap: 68px;
+    }
+
+    .main-right {
+        margin-bottom: 128px;
+    }
+
+    .logos {
+        margin-bottom: 204px;
+    }
+
+    .logo-img {
+        width: 55%;
+    }
+
+    .inform-title {
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+
+    .inform-text {
+        padding-bottom: 32px;
+    }
+
+    .inform-link {
+        margin-right: 0px;
+    }
+
+    .inform-left {
+        padding-bottom: 68px;
+    }
+
+    .inform-left, .inform-right {
+        width: 97%;
+        text-align: center;
+    }
+
+    .inform-img{
+        width: 97%;
+    }
+
+    .card {
+        text-align: center;
+    }
+    .card-img {
+        margin-left: 0;
+    }
+
+    .card-title-4 {
+        margin-bottom: 60px;
+    }
+    .reviews-title {
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+
+    .reviews-text {
+        padding-bottom: 16px;
+    }
+
+    .reviews-left, .reviews-right {
+        width: 97%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .reviews-right{
+        margin-bottom: 209px;
+    }
+
+    .reviews-img{
+        max-width: 97%;
+    }
+
+    .footer-subtitle{
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        width: 97%;
+        margin-bottom: 32px;
+    }
+
+    .footer-left{
+        order: 1;
+    }
+
+    .footer-center{
+        order: 0;
+    }
+
+    .footer-right{
+        order: 2;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    .footer-social{
+        justify-content: center;
+    }
+
 }
