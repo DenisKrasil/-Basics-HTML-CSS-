@@ -897,6 +897,10 @@ main {
   border-radius: 0px 10px 10px 0px;
 }
 
+.header__form-search{
+  display: flex;
+}
+
 .header__form-input:hover, .header__form-input:focus, .header__form-input:active {
   border-color: #00f7ff;
   cursor: pointer;
