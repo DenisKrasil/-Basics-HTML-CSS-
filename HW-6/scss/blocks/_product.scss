@@ -1,15 +1,13 @@
 .product{
     &__heading{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         background-color: $pink-bkg;
         height: 148px;
 
         @include tablet{
             justify-content: space-between;
-            padding-left: 16px;
-            padding-right: 16px;
         }
 
         @include mobile{
@@ -35,6 +33,13 @@
                 color: $pink-color;
                 @include font (14px, 17px, 700);
             }
+        }
+
+        &-link-current{
+            color: $pink-color;
+            @include font (14px, 17px, 700);
+            text-transform: uppercase;
+            text-decoration: none;
         }
     }
 
@@ -125,7 +130,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 64px;
+        margin-top: -64px;
+        background-color: #FFF;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        max-width: 1140px;
+    }
+    @include tablet{
+        &__colection{
+            margin-top: 0px;
+        }
     }
 
     &__colection-title-pink{
