@@ -5,17 +5,11 @@
     &__title{
         text-transform: uppercase;
         padding-top: 59px;
-        padding-left: 230px;
         @include font(24px, 29px, 400);
         color: $pink-color;
 
-        @include tablet{
-            padding-left: 16px;
-        }
-
         @include mobile{
             text-align: center;
-            padding-left: 0px;
         }
     }
 }

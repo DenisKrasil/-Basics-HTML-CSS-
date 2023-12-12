@@ -23,6 +23,19 @@
             color: $white-color;
         }
     }
+
+    &__pagination{
+        margin-top: 48px;
+        margin-left: 37%;
+
+        @include tablet{
+            margin-left: 33%;
+        }
+
+        @include mobile{
+            margin-left: 25%;
+        }
+    }
 }
 
 

@@ -63,6 +63,10 @@
         border-color: $button-bkg;
         color: $pink-color;
         background-color: $white-color;
+
+        @include mobile{
+            margin-bottom: 42px;
+        }
     }
 
     &-button{

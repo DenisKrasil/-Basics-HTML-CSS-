@@ -365,6 +365,20 @@ main {
   background-color: #F18B99;
   color: #FFFFFF;
 }
+.catalog__pagination {
+  margin-top: 48px;
+  margin-left: 37%;
+}
+@media (max-width: 1599px) {
+  .catalog__pagination {
+    margin-left: 33%;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__pagination {
+    margin-left: 25%;
+  }
+}
 
 .contacts {
   background-color: #222222;
@@ -485,6 +499,11 @@ main {
   color: #F18B99;
   background-color: #FFFFFF;
 }
+@media (max-width: 767px) {
+  .dilivery__count-button {
+    margin-bottom: 42px;
+  }
+}
 .dilivery__count-button:hover, .dilivery__count-button:focus, .dilivery__count-button:active {
   background-color: #F16D7F;
   color: #FFFFFF;
@@ -584,6 +603,7 @@ main {
 @media (max-width: 767px) {
   .form-registrtion__loyalty {
     max-width: 95%;
+    margin-bottom: 100px;
   }
 }
 .form-registrtion__loyalty-title {
@@ -897,22 +917,15 @@ main {
 .heading__title {
   text-transform: uppercase;
   padding-top: 59px;
-  padding-left: 230px;
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
   font-style: normal;
   color: #F18B99;
 }
-@media (max-width: 1599px) {
-  .heading__title {
-    padding-left: 16px;
-  }
-}
 @media (max-width: 767px) {
   .heading__title {
     text-align: center;
-    padding-left: 0px;
   }
 }
 
@@ -920,13 +933,14 @@ main {
   background-image: url(../img/subscribe-bkg.png);
   min-height: 448px;
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 @media (max-width: 1599px) {
   .inform {
     min-height: 693px;
     background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 @media (max-width: 767px) {
@@ -1402,17 +1416,11 @@ main {
 .registration__title {
   text-transform: uppercase;
   padding-top: 59px;
-  padding-left: 230px;
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
   font-style: normal;
   color: #F18B99;
-}
-@media (max-width: 1599px) {
-  .registration__title {
-    padding-left: 16px;
-  }
 }
 @media (max-width: 767px) {
   .registration__title {
@@ -1752,7 +1760,21 @@ main {
 }
 .filtres__sort {
   display: flex;
+  align-items: center;
   gap: 28px;
+}
+.filtres__sort_text {
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 767px) {
+  .filtres__sort_text {
+    font-size: 12px;
+  }
 }
 .filtres__flex {
   position: absolute;
@@ -1761,4 +1783,15 @@ main {
   text-align: center;
   gap: 200px;
   margin-bottom: 64px;
+}
+@media (max-width: 767px) {
+  .filtres__flex {
+    gap: 50px;
+    left: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .filtres__text {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
