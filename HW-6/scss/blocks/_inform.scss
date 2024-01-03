@@ -2,12 +2,14 @@
     background-image: url(../img/subscribe-bkg.png);
     min-height: 448px;
     display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
 
     @include tablet{
         min-height: 693px;
         background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
+
     }
 
     @include mobile{
